@@ -10,11 +10,20 @@ if [ "$selected_theme" == "" ]; then
 fi
 
 vscode_user_dir=$HOME/.config/Code/User
+rofi_themes_dir=$HOME/.config/rofi/themes
+kitty_themes_dir=$kitty_themes_dir
+bspwm_colors_dir=$HOME/.config/bspwm/colors
 
 select_vscode_theme() {
     # Get the current theme
     notify-send "Selecting vscode theme"
     jq ".\"workbench.colorTheme\" = \"$1\"" $vscode_user_dir/settings.json >$vscode_user_dir/temp.json && mv $vscode_user_dir/temp.json $vscode_user_dir/settings.json
+}
+
+set_bspwm_theme() {
+    theme_file=$1
+    cp $bspwm_colors_dir/$theme_file $bspwm_colors_dir/current_color.sh
+    bash $bspwm_colors_dir/current_color.sh
 }
 
 select_spotify_theme() {
@@ -38,23 +47,34 @@ select_spotify_theme() {
 if [ "$selected_theme" == "$mocha" ]; then
 
     # Move to the kitty themes folderz
-    cp $HOME/.config/kitty/themes/mocha.conf $HOME/.config/kitty/themes/theme.conf
+    cp $kitty_themes_dir/mocha.conf $kitty_themes_dir/theme.conf
 
     # Edit Vscode settings.json
     select_vscode_theme "$mocha"
 
+    # Update Rofi theme
+    cp $rofi_themes_dir/Catppuccin-Mocha.rasi $rofi_themes_dir/theme.rasi
+
+    # Update bspwm theme
+    set_bspwm_theme "Catppuccin_Mocharc"
+
     # Edit spicetify
     select_spotify_theme "catppuccin" "mocha"
-
     echo "Theme changed to $mocha"
 
 elif [ "$selected_theme" == "$decayce_green" ]; then
 
     # Move to the kitty themes folder
-    cp $HOME/.config/kitty/themes/Decay-Green.conf $HOME/.config/kitty/themes/theme.conf
+    cp $kitty_themes_dir/Decay-Green.conf $kitty_themes_dir/theme.conf
 
     # Edit Vscode settings.json
     select_vscode_theme "$decayce_green"
+
+    # Update Rofi theme
+    cp $rofi_themes_dir/Decaycez.rasi $rofi_themes_dir/theme.rasi
+
+    # Update bspwm theme
+    set_bspwm_theme "Decaycexrc"
 
     # Edit spicetify
     select_spotify_theme "decayce"

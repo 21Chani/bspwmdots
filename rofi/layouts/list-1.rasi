@@ -21,7 +21,7 @@ window {
     padding:                     0px;
     border:                      2px solid;
     border-radius:               8px;
-    border-color:                @select-fg;
+    border-color:                @border-color;
     background-color:            @main-bg;
 }
 
