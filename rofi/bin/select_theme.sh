@@ -11,7 +11,7 @@ fi
 
 vscode_user_dir=$HOME/.config/Code/User
 rofi_themes_dir=$HOME/.config/rofi/themes
-kitty_themes_dir=$kitty_themes_dir
+kitty_themes_dir=$HOME/.config/kitty/themes
 bspwm_colors_dir=$HOME/.config/bspwm/colors
 
 select_vscode_theme() {
