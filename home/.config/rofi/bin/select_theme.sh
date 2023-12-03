@@ -58,6 +58,9 @@ if [ "$selected_theme" == "$mocha" ]; then
     # Update bspwm theme
     set_bspwm_theme "Catppuccin_Mocharc"
 
+    # Set KDE theme
+    kvantummanager --set Catppuccin-Mocha
+
     # Edit spicetify
     select_spotify_theme "catppuccin" "mocha"
     echo "Theme changed to $mocha"
@@ -75,6 +78,9 @@ elif [ "$selected_theme" == "$decayce_green" ]; then
 
     # Update bspwm theme
     set_bspwm_theme "Decaycexrc"
+
+    # Set KDE theme
+    kvantummanager --set Decay-Green
 
     # Edit spicetify
     select_spotify_theme "decayce"
