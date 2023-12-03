@@ -1,0 +1,119 @@
+// Config //
+configuration {
+    modi:                        "drun";
+    show-icons:                  true;
+    drun-display-format:         "{name}";
+    font:                        "JetBrainsMono Nerd Font 10";
+}
+
+@theme "~/.config/rofi/themes/theme.rasi"
+
+
+// Main //
+window {
+    enabled:                     true;
+    fullscreen:                  false;
+    width:                       500px;
+    height:                      500px;
+    transparency:                "real";
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               8px;
+    border-color:                @select-fg;
+    background-color:            @main-bg;
+}
+
+mainbox { 
+    border-radius:               inherit;
+    enabled:                     true;
+    children:                    [  "imagebox", "listview" ];
+    background-color:            transparent;
+}
+
+imagebox { 
+    padding:                     20px;
+    background-image:            url("~/.local/share/backgrounds/astronaut-2.png", width);
+    orientation:                 vertical;
+    width:                       400px; 
+}
+
+message {
+    border-radius:               0px;
+    position:                    "center";
+    padding:                     20px 10px;
+    background-color:            @select-bg;
+
+}   
+
+textbox {
+    background-color:            transparent;
+    border-radius:               inherit;
+    enabled:                     true;
+    expand:                      true;
+    markup:                      "pango";
+    text-color:                  white;
+    text-style:                  "bold";
+    position:                    "center";
+    horizontal-align:            0.5;
+    font:                        "JetBrainsMono Nerd Font 18";
+}
+
+
+// Lists //
+listview {
+    enabled:                     true;   
+    padding:                     50px 60px 50px 60px; 
+    // scrollbar:                   true;
+    layout:                      vertical;
+
+    fixed-width:                 true;  
+    cursor:                      "default"; 
+    text-color:                  @main-fg; 
+    background-color:            transparent;
+} 
+element {
+    enabled:                     true;
+    spacing:                     8px;
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            transparent;
+    text-color:                  @main-br;
+    cursor:                      pointer;
+} 
+ 
+
+element-icon {  
+    size: 30px;
+    enabled:                     false;
+    cursor:                      inherit;
+    border-radius:               35px;  
+    text-color:                  inherit; 
+    background-color:            transparent;
+}
+
+span {
+    enabled:                     true;
+    expand:                      true;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    cursor:                      inherit;
+    background-color:            transparent; 
+}
+
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+}
+
+element-text {
+    enabled:                     true;
+    // vertical-align:              0.5;
+    // horizontal-align:            0.5;
+    cursor:                      inherit;
+    background-color:            transparent;
+    expand:                      true; 
+    text-color:                  inherit;
+}
+

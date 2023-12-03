@@ -1,0 +1,11 @@
+* {
+    font:               "CaskaydiaCove Nerd Font Mono 12";
+    main-bg:            #0d0f1890;
+    main-fg:            #6b7078;
+    main-br:            #98d3eecc;
+    main-ex:            #95d3afcc;
+    select-bg:          #6b707850;
+    select-fg:          #94F7C5;
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}
