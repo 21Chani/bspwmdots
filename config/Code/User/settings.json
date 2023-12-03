@@ -1,0 +1,28 @@
+{
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "window.menuBarVisibility": "toggle",
+  "editor.fontSize": 11,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.formatOnSave": true,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'monospace', monospace",
+  "extensions.autoUpdate": false,
+  "workbench.statusBar.visible": false,
+  "terminal.external.linuxExec": "kitty",
+  "terminal.explorerKind": "both",
+  "terminal.sourceControlRepositoriesKind": "both",
+  "telemetry.telemetryLevel": "off",
+  "workbench.sideBar.location": "right",
+  "editor.minimap.autohide": true,
+  "window.zoomLevel": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.iconTheme": "material-icon-theme",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
+}

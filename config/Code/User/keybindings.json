@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+alt+c",
+    "command": "list.collapseAll",
+    "when": "!editorFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "-list.collapseAll",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "home",
+    "command": "editor.action.goToDeclaration"
+  },
+  {
+    "key": "shift+home",
+    "command": "editor.action.openDeclarationToTheSide"
+  },
+  {
+    "key": "alt+n",
+    "command": "editor.action.focusNextCursor"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "editor.emmet.action.selectNextItem"
+  }
+]
