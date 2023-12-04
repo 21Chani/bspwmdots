@@ -38,6 +38,9 @@ export GHREPOS="$REPOS/github.com"
 export GHUSR="$GHREPOS/21Chani"
 export MARIGOLD="$GHREPOS/Marigold"
 
+# CD_PATH
+cdpath=($REPOS;$GHREPOS;$GHUSR;$MARIGOLD)
+
 # CONFIG
 export CONFIG_DIR="$HOME/.config"
 export BSPWM_DIR="$CONFIG_DIR/bspwm"
@@ -48,11 +51,7 @@ export PICOM_DIR="$CONFIG_DIR/picom"
 # ROFI
 export ROFI_DIR="$CONFIG_DIR/rofi"
 export LAUNCHERS_DIR="$ROFI_DIR/launchers"
-
 export PSCALE_DISABLE_DEV_WARNING=true
-
-# CD_PATH
-cdpath=($REPOS;$GHREPOS;$GHUSR;$MARIGOLD)
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 neofetch
