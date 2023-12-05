@@ -56,3 +56,5 @@ yay -S bspwm sxhkd picom nitrogen polybar firefox
 relative_path=$(dirname "$0")
 
 cp -r "$relative_path/home/*" "$HOME"
+
+https://github.com/21Chani/bspwmdots
