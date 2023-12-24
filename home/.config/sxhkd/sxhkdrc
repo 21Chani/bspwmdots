@@ -10,6 +10,9 @@ super + t
 super + k
 	bash ~/.config/rofi/bin/keyboard_layout.sh
 
+super + n
+	nitrogen
+
 # program launcher
 super + ctrl + @space
 	dmenu_run
