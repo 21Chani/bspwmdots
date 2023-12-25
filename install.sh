@@ -4,7 +4,7 @@ relative_path=$(dirname "$0")
 echo "Installing dependencies..."
 
 # Yay
-bash "$relative_path/src/bin/yay_install.sh"
+sh "$relative_path/src/bin/yay_install.sh"
 
 # Xorg Server
 
@@ -13,14 +13,21 @@ yay -S xorg xorg-xinit
 
 # Bspwm
 echo "[INFO] Installing bspwm..."
-cat "$relative_path/src/bspwm.packages.conf" | xargs yay -S
+yay -S - <"$relative_path/src/bspwm.packages.conf"
 
 # Extra packages
-cat "$relative_path/src/system.packages.conf" | xargs yay -S
+yay -S - <"$relative_path/src/system.packages.conf"
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install powrlevel10k
+yay -S --noconfirm zsh-theme-powerlevel10k-git
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 # Configure apps
 
-bash "$relative_path/src/bin/install_code_extensions.sh"
+sh "$relative_path/src/bin/install_code_extensions.sh"
 
 #  ▄▄  ▄▄  ▄  ▄ ▄▄▄ ▄ ▄▄▄
 # █   █  █ ██▄█ █▄▄ █ █ ▄▄
