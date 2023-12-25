@@ -12,7 +12,7 @@ echo "[INFO] Installing Xorg Server..."
 yay -S xorg xorg-xinit
 
 echo "[INFO] Installing bspwm..."
-yay -S bspwm sxhkd picom nitrogen polybar firefox
+cat "$relative_path/src/bspwm.packages.conf" | xargs yay -S
 
 #  ▄▄  ▄▄  ▄  ▄ ▄▄▄ ▄ ▄▄▄
 # █   █  █ ██▄█ █▄▄ █ █ ▄▄
