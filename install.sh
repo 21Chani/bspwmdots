@@ -18,12 +18,8 @@ yay -S --noconfirm - <"$relative_path/src/bspwm.packages.conf"
 # Extra packages
 yay -S --noconfirm - <"$relative_path/src/system.packages.conf"
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install powrlevel10k
-yay -S --noconfirm zsh-theme-powerlevel10k-git
-echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+# Install zsh
+bash "$relative_path/src/bin/zsh_install.sh"
 
 # Configure apps
 
