@@ -7,7 +7,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d code office graphics web media chat files misc extra
 
 bspc config border_width 2
 bspc config window_gap 16
@@ -28,9 +28,8 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Nitrogen state=floating
 bspc rule -a dolphin state=floating
 
-picom -fb --backend glx --config $HOME/.config/picom/picom.conf
-mpd
-bash $HOME/.config/polybar/launch.sh --shapes
+picom --backend glx --config $HOME/.config/picom/picom.conf
 
+polybar
 xrandr --output DP-0 --primary --mode 3440x1440 --rotate normal --output HDMI-0 --mode 1920x1080 --right-of DP-0 --rotate right
 nitrogen --restore &
