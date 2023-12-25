@@ -1,5 +1,13 @@
 #/bin/sh!
 
+src_path=$(
+    cd "$(dirname "$0")/.."
+    pwd
+)
+
+sudo mkdir /user/share/zsh-theme-powerlevel10k
+sudo cp -r $src_path/powerlevel10k.zsh-theme /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
 # Install zsh
 yay -S --noconfirm zsh
 chsh -s /bin/zsh
