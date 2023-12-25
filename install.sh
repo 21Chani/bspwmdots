@@ -13,10 +13,10 @@ yay -S xorg xorg-xinit
 
 # Bspwm
 echo "[INFO] Installing bspwm..."
-yay -S - <"$relative_path/src/bspwm.packages.conf"
+yay -S --noconfirm - <"$relative_path/src/bspwm.packages.conf"
 
 # Extra packages
-yay -S - <"$relative_path/src/system.packages.conf"
+yay -S --noconfirm - <"$relative_path/src/system.packages.conf"
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
