@@ -37,3 +37,6 @@ cp -r "$relative_path/home/." "$HOME"
 
 # Set wallpaper
 sh "$relative_path/src/bin/set_wallpaper.sh"
+
+# Install SDDM
+sh "$relative_path/src/bin/install_sddm.sh"
