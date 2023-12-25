@@ -34,7 +34,7 @@ mainbox {
 
 imagebox { 
     padding:                     20px;
-    background-image:            url("~/.local/share/backgrounds/astronaut-2.png", width);
+    background-image:            url("~/.local/share/backgrounds/night_forest.jpg", width);
     orientation:                 vertical;
     width:                       400px; 
 }

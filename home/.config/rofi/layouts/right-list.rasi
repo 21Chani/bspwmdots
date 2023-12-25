@@ -53,7 +53,7 @@ mainbox {
 
 imagebox { 
     padding:                     20px;
-    background-image:            url("~/.local/share/backgrounds/wormhole-astronaut-5200x3250-9640.jpg", height);
+    background-image:            url("~/.local/share/backgrounds/night_forest.jpg", height);
     orientation:                 vertical;
     width:                       400px;
     children:                    [ "inputbar", "dummy" ];
@@ -110,10 +110,12 @@ mode-switcher{
 }
 button {
     cursor:                      pointer;
-    border-radius:               50px; 
+    border-radius:               10px; 
     background-color:            @select-bg;
     text-color:                  @select-fg;
-    font:                        "CaskaydiaCove Nerd Font Mono 30";}
+    font:                        "Iosevka Nerd Font 15 ";
+    padding:                     10px 15px 10px 10px;
+}
 button selected {
     background-color:            @select-fg;
     text-color:                  @select-bg;
