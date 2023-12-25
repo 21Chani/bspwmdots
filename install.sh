@@ -34,3 +34,6 @@ sh "$relative_path/src/bin/install_code_extensions.sh"
 # ▀▄▄ ▀▄▄▀ █ ▀█ █   █ █▄▄█
 
 cp -r "$relative_path/home/." "$HOME"
+
+# Set wallpaper
+sh "$relative_path/src/bin/set_wallpaper.sh"
