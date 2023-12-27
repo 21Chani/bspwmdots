@@ -10,6 +10,9 @@ super + t
 super + k
 	bash ~/.config/rofi/bin/keyboard_layout.sh
 
+ctrl + shift + t 
+  picom-trans -c -t
+
 super + n
 	nitrogen
 
