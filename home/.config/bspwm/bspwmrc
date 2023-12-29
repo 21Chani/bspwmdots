@@ -7,7 +7,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-bspc monitor -d code office graphics web media chat files misc extra
+xrandr --output DP-0 --primary --mode 3440x1440 --rotate normal --output HDMI-0 --mode 1920x1080 --right-of DP-0 --rotate right 
 
 bspc config border_width 2
 bspc config window_gap 16
@@ -28,8 +28,10 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Nitrogen state=floating
 bspc rule -a dolphin state=floating
 
-picom --backend glx --config $HOME/.config/picom/picom.conf
+bspc monitor DP-0 -d code office graphics web media chat files misc extra
 
-polybar
-xrandr --output DP-0 --primary --mode 3440x1440 --rotate normal --output HDMI-0 --mode 1920x1080 --right-of DP-0 --rotate right
+barriers -c $HOME/.local/share/barrier/barrier.conf -d INFO -f --daemon --disable-crypto 
+picom --backend glx --config $HOME/.config/picom/picom.conf &
+
+polybar &
 nitrogen --restore &
