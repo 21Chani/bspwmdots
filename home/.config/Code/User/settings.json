@@ -8,7 +8,9 @@
   "security.workspace.trust.untrustedFiles": "newWindow",
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.enabled": false,
-  "editor.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'monospace', monospace",
+  "editor.fontFamily": "'MesloLGS NF','CaskaydiaCove Nerd Font Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "bold",
   "extensions.autoUpdate": false,
   "workbench.statusBar.visible": false,
   "terminal.external.linuxExec": "kitty",
@@ -19,10 +21,13 @@
   "editor.minimap.autohide": true,
   "window.zoomLevel": 1,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "catppuccin-mocha",
   "git.confirmSync": false,
   "git.autofetch": true,
   "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[properties]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
