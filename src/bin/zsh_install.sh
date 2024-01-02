@@ -13,7 +13,7 @@ yay -S --noconfirm zsh
 chsh -s /bin/zsh
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended --skip-chsh --keep-zshrc
 
 # Install powrlevel10k
 yay -S --noconfirm zsh-theme-powerlevel10k-git
