@@ -13,7 +13,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-plugins=(git; zsh-autosuggestions)
+plugins=(git; zsh-autosuggestions; wakatime)
 
 source $ZSH/oh-my-zsh.sh
 
