@@ -1,10 +1,13 @@
 #!/bin/bash
+
+# PATHS
 relative_path=$(dirname "$0")
+scripts_dir="$relative_path/src/bin"
 
 echo "Installing dependencies..."
 
 # Yay
-sh "$relative_path/src/bin/yay_install.sh"
+sh "$scripts_dir/yay_install.sh"
 
 # Xorg Server
 
@@ -19,11 +22,11 @@ yay -S --noconfirm - <"$relative_path/src/bspwm.packages.conf"
 yay -S --noconfirm - <"$relative_path/src/system.packages.conf"
 
 # Install zsh
-bash "$relative_path/src/bin/zsh_install.sh"
+bash "$scripts_dir/zsh_install.sh"
 
 # Configure apps
 
-sh "$relative_path/src/bin/install_code_extensions.sh"
+sh "$scripts_dir/install_code_extensions.sh"
 
 #  ▄▄  ▄▄  ▄  ▄ ▄▄▄ ▄ ▄▄▄
 # █   █  █ ██▄█ █▄▄ █ █ ▄▄
@@ -32,7 +35,7 @@ sh "$relative_path/src/bin/install_code_extensions.sh"
 cp -r "$relative_path/home/." "$HOME"
 
 # Set wallpaper
-sh "$relative_path/src/bin/set_wallpaper.sh"
+sh "$scripts_dir/set_wallpaper.sh"
 
 # Install SDDM
-sh "$relative_path/src/bin/install_sddm.sh"
+sh "$scripts_dir/install_sddm.sh"
