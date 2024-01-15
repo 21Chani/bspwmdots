@@ -7,6 +7,7 @@ apps=(
     "vercel"
     "instagram"
     "youtube"
+    "chatgpt"
 )
 
 for app in "${apps[@]}"; do
