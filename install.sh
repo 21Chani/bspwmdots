@@ -22,6 +22,10 @@ yay -S --noconfirm - <"$relative_path/src/bspwm.packages.conf"
 echo "[INFO] Installing app packages..."
 yay -S --noconfirm - <"$relative_path/src/system.packages.conf"
 
+# Make sure the user owns the code directory
+# This is needed the apc extension to work
+sudo chown -R $(whoami) /usr/share/code
+
 # Install zsh
 bash "$scripts_dir/zsh_install.sh"
 

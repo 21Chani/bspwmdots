@@ -1,33 +1,108 @@
 {
-  "workbench.colorTheme": "Catppuccin Mocha",
   "window.menuBarVisibility": "toggle",
-  "editor.fontSize": 11,
-  "editor.scrollbar.vertical": "hidden",
+  "window.zoomLevel": 1,
+
+  "editor.fontSize": 10,
+  "editor.wordWrap": "on",
   "editor.formatOnSave": true,
+  "editor.fontWeight": "bold",
+  "editor.lineHeight": 1.6,
+  "editor.fontLigatures": true,
+  "editor.minimap.autohide": true,
+  "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'MesloLGS NF','CaskaydiaCove Nerd Font Mono', 'monospace', monospace",
+  "editor.renderLineHighlight": "gutter",
+
   "security.workspace.trust.untrustedFiles": "newWindow",
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.enabled": false,
-  "editor.fontFamily": "'MesloLGS NF','CaskaydiaCove Nerd Font Mono', 'monospace', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "bold",
-  "extensions.autoUpdate": false,
-  "workbench.statusBar.visible": false,
-  "terminal.external.linuxExec": "kitty",
-  "terminal.explorerKind": "both",
-  "terminal.sourceControlRepositoriesKind": "both",
-  "telemetry.telemetryLevel": "off",
+
+  "extensions.autoUpdate": true,
+
+  "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.sideBar.location": "right",
-  "editor.minimap.autohide": true,
-  "window.zoomLevel": 1,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    "[Catppuccin Mocha]": {
+      "editorGroupHeader.tabsBackground": "#181825",
+      "statusBar.background": "#181825",
+      "tab.activeBorderTop": "#00000000",
+      "editorIndentGuide.background1": "#31324480",
+      "editorIndentGuide.background2": "#31324480",
+      "editorIndentGuide.background3": "#31324480",
+      "editorIndentGuide.background4": "#31324480",
+      "editorIndentGuide.background5": "#31324480",
+      "editorIndentGuide.background6": "#31324480"
+    }
+  },
+
+  // "editor.guides.highlightActiveIndentation": true,
+  "editor.guides.indentation": true,
+
+  "explorer.fileNesting.expand": true,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslintrc*, .prettier*, prettier*, .npmrc, tsconfig*, vercel.json, commitlint.config.js, pnpm-lock.yaml, vite*, package-lock*, bun.lock*",
+    ".env": ".env*",
+    "jest": "jest.config.js",
+    "tailwind.config*": "postcss*, tailwind*",
+    "next.config.js": "next-env.d.ts",
+    "jest.config.js": "jest.setup.js"
+  },
+
+  "breadcrumbs.enabled": false,
+
+  "terminal.sourceControlRepositoriesKind": "both",
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.external.linuxExec": "kitty",
+  "terminal.explorerKind": "integrated",
+  "terminal.integrated.lineHeight": 1,
+  "terminal.integrated.fontSize": 10,
+
+  "telemetry.telemetryLevel": "off",
+
   "git.confirmSync": false,
   "git.autofetch": true,
-  "[shellscript]": {
+
+  "[shellscript]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+  "[properties]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+
+  "[dotenv,typescript,javascript,json,jsonc]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "[properties]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+
+  "symbols.hidesExplorerArrows": true,
+
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".pane-body": "padding: 8px",
+    ".tab": "margin: 2px; border-radius: 6px 6px 0px 0px; overflow: hidden",
+    ".scroll-decoration": "display: none",
+    ".tabs-container": "padding-top: 8px",
+    "span .label-description": "font-size: 8px!important; font-weight: bold;",
+    ".label-description::before": "content: '| '",
+    ".monaco-list-row": "border-radius: 3px",
+    ".core-guide-indent": "box-shadow: none !important; border-left: 2px dashed #585b7040;",
+    ".indent-active": "box-shadow: none !important; border-left: 2px dashed #585b70;"
+  },
+  "apc.header": {
+    "fontSize": 10,
+    "height": 30
+  },
+  "apc.listRow": {
+    "fontSize": 10,
+    "height": 22
+  },
+
+  "apc.font.family": "MesloLGS NF",
+  "cmake.showOptionsMovedNotification": false,
+  "git.openRepositoryInParentFolders": "never",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   }
 }
