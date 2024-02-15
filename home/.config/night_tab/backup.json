@@ -51,7 +51,7 @@
         "newTab": false
       },
       "order": ["greeting", "transitional", "clock", "date"],
-      "edit": false
+      "edit": true
     },
     "bookmark": {
       "size": 82,
@@ -62,7 +62,7 @@
       "orientation": "bottom",
       "style": "block",
       "newTab": false,
-      "edit": false,
+      "edit": true,
       "add": false,
       "show": true,
       "item": {}
@@ -72,7 +72,7 @@
       "order": "header-body",
       "name": { "size": 100 },
       "toolbar": { "size": 100 },
-      "edit": false,
+      "edit": true,
       "add": false
     },
     "toolbar": {
@@ -231,162 +231,10 @@
   },
   "bookmark": [
     {
-      "name": { "text": "Fav", "show": false },
+      "name": { "text": "Dev", "show": true },
       "collapse": false,
       "toolbar": { "openAll": { "show": false }, "collapse": { "show": false } },
       "items": [
-        {
-          "url": "https://www.google.com/",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "" },
-              "icon": { "name": "google", "prefix": "fab", "label": "Google Logo" },
-              "image": { "url": "" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1653109570692
-        },
-        {
-          "url": "https://www.youtube.com/feed/subscriptions",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "" },
-              "icon": { "name": "youtube", "prefix": "fab", "label": "YouTube" },
-              "image": { "url": "" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1653110699948
-        },
-        {
-          "url": "https://store.steampowered.com/",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "" },
-              "icon": { "name": "steam", "prefix": "fab", "label": "Steam" },
-              "image": { "url": "" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1653111274720
-        },
-        {
-          "url": "https://www.protondb.com/",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "Netflix", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "Netflix" },
-              "icon": { "name": "atom", "prefix": "fas", "label": "Atom" },
-              "image": { "url": "https://pngshare.com/wp-content/uploads/2021/06/Netflix-Logo-Icon-Black-8.png" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1626298022303
-        },
         {
           "url": "https://github.com/21Chani",
           "display": {
@@ -424,120 +272,6 @@
           "border": 0,
           "shape": { "wide": false, "tall": false },
           "timestamp": 1653111473095
-        },
-        {
-          "url": "https://www.reddit.com/",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "Reddit", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "R" },
-              "icon": { "name": "reddit-alien", "prefix": "fab", "label": "reddit Alien" },
-              "image": { "url": "" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1626298017175
-        },
-        {
-          "url": "https://discord.com/channels/@me",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "" },
-              "icon": { "name": "discord", "prefix": "fab", "label": "Discord" },
-              "image": { "url": "" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1653111014835
-        },
-        {
-          "url": "https://www.amazon.in/",
-          "display": {
-            "alignment": "center-center",
-            "direction": "vertical",
-            "order": "visual-name",
-            "rotate": 0,
-            "translate": { "x": 0, "y": 0 },
-            "gutter": 25,
-            "name": { "show": false, "text": "Amazon", "size": 7 },
-            "visual": {
-              "show": true,
-              "type": "icon",
-              "size": 25,
-              "letter": { "text": "AZ" },
-              "icon": { "name": "amazon", "prefix": "fab", "label": "Amazon" },
-              "image": { "url": "" },
-              "shadow": { "size": 0 }
-            }
-          },
-          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
-          "color": {
-            "by": "theme",
-            "hsl": { "h": 0, "s": 0, "l": 0 },
-            "rgb": { "r": 0, "g": 0, "b": 0 },
-            "opacity": 80
-          },
-          "background": {
-            "show": false,
-            "type": "image",
-            "opacity": 100,
-            "image": { "url": "" },
-            "video": { "url": "" }
-          },
-          "border": 0,
-          "shape": { "wide": false, "tall": false },
-          "timestamp": 1626297999213
         },
         {
           "url": "https://dash.cloudflare.com/bca5d3d559638798710668d0f8cdbd96",
@@ -578,6 +312,124 @@
           "border": 0,
           "shape": { "wide": false, "tall": false },
           "timestamp": 1706012550148
+        },
+        {
+          "url": "https://chat.openai.com/",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": true, "text": "", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "image",
+              "size": 25,
+              "letter": { "text": "" },
+              "icon": { "name": "", "prefix": "", "label": "openai" },
+              "image": {
+                "url": "https://media.discordapp.net/attachments/1115714867463196766/1186359166646890588/openai.png?ex=65dcca12&is=65ca5512&hm=2821e7ab9df3f6d05ccaaaec470df509a2109be5f1b108cafef95a78042ef919&=&format=webp&quality=lossless&width=810&height=821"
+              },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1707993504502
+        },
+        {
+          "url": "https://vercel.com/marigold-labs",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": true, "text": "", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "image",
+              "size": 25,
+              "letter": { "text": "" },
+              "icon": { "name": "", "prefix": "", "label": "" },
+              "image": {
+                "url": "https://media.discordapp.net/attachments/1115714867463196766/1191926503227789424/vercel1.png?ex=65de960f&is=65cc210f&hm=ddfcfec17e0544abb1db776416374ce354361045e06a567b493b3fed94e3f8bc&=&format=webp&quality=lossless"
+              },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1708166372913
+        },
+        {
+          "url": "https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1102761072753180247",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": true, "text": "", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": { "text": "" },
+              "icon": { "name": "figma", "prefix": "fab", "label": "Figma" },
+              "image": { "url": "" },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1708166398718
         }
       ]
     },
@@ -661,6 +513,165 @@
           "border": 0,
           "shape": { "wide": false, "tall": false },
           "timestamp": 1708165684520
+        },
+        {
+          "url": "https://www.google.com/",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": false, "text": "", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": { "text": "" },
+              "icon": { "name": "google", "prefix": "fab", "label": "Google Logo" },
+              "image": { "url": "" },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 80
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1653109570692
+        }
+      ]
+    },
+    {
+      "name": { "text": "Stream", "show": true },
+      "collapse": false,
+      "toolbar": { "size": 100, "openAll": { "show": true }, "collapse": { "show": true } },
+      "items": [
+        {
+          "url": "https://store.steampowered.com/",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": false, "text": "", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": { "text": "" },
+              "icon": { "name": "steam", "prefix": "fab", "label": "Steam" },
+              "image": { "url": "" },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 80
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1653111274720
+        },
+        {
+          "url": "https://www.youtube.com/feed/subscriptions",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": false, "text": "", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": { "text": "" },
+              "icon": { "name": "youtube", "prefix": "fab", "label": "YouTube" },
+              "image": { "url": "" },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 80
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1653110699948
+        },
+        {
+          "url": "https://www.amazon.in/",
+          "display": {
+            "alignment": "center-center",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": { "x": 0, "y": 0 },
+            "gutter": 25,
+            "name": { "show": false, "text": "Amazon", "size": 7 },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": { "text": "AZ" },
+              "icon": { "name": "amazon", "prefix": "fab", "label": "Amazon" },
+              "image": { "url": "" },
+              "shadow": { "size": 0 }
+            }
+          },
+          "accent": { "by": "theme", "hsl": { "h": 0, "s": 0, "l": 0 }, "rgb": { "r": 0, "g": 0, "b": 0 } },
+          "color": {
+            "by": "theme",
+            "hsl": { "h": 0, "s": 0, "l": 0 },
+            "rgb": { "r": 0, "g": 0, "b": 0 },
+            "opacity": 80
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": { "url": "" },
+            "video": { "url": "" }
+          },
+          "border": 0,
+          "shape": { "wide": false, "tall": false },
+          "timestamp": 1626297999213
         }
       ]
     }
