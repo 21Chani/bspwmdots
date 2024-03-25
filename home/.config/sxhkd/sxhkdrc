@@ -39,6 +39,9 @@ super + b
 super + n
 	nitrogren
 
+super + alt + c
+	xcolor -P 200 -S 4 
+
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +5%
 
